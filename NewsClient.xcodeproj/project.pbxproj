@@ -1,0 +1,829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46D5B360CC7975ABE804A089 /* libPods-NewsClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5729CCB52305DB2AEE3D8D3B /* libPods-NewsClient.a */; };
+		F86F70D81E7B0942004B8327 /* MYRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F70D71E7B0942004B8327 /* MYRequestManager.m */; };
+		F86F70DB1E7D5A66004B8327 /* MYNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F70DA1E7D5A66004B8327 /* MYNewsModel.m */; };
+		F86F70DF1E7D66D5004B8327 /* MYNewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F70DD1E7D66D5004B8327 /* MYNewsDetailViewController.m */; };
+		F86F70E01E7D66D5004B8327 /* MYNewsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F86F70DE1E7D66D5004B8327 /* MYNewsDetailViewController.xib */; };
+		F86F70E41E7D9B01004B8327 /* MYNewsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F70E21E7D9B01004B8327 /* MYNewsListCell.m */; };
+		F86F70E51E7D9B01004B8327 /* MYNewsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F86F70E31E7D9B01004B8327 /* MYNewsListCell.xib */; };
+		F86F70E91E7EFA4C004B8327 /* MYNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F70E71E7EFA4C004B8327 /* MYNewsViewController.m */; };
+		F86F70EA1E7EFA4C004B8327 /* MYNewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F86F70E81E7EFA4C004B8327 /* MYNewsViewController.xib */; };
+		F86F70F21E80C81B004B8327 /* MYNewsListHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F70F11E80C81B004B8327 /* MYNewsListHelper.m */; };
+		F87D75DE1E7AD44A00FBD447 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F87D75DD1E7AD44A00FBD447 /* main.m */; };
+		F87D75E11E7AD44A00FBD447 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F87D75E01E7AD44A00FBD447 /* AppDelegate.m */; };
+		F87D75EC1E7AD44A00FBD447 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87D75EA1E7AD44A00FBD447 /* LaunchScreen.storyboard */; };
+		F87D764C1E7AF08000FBD447 /* MYNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87D76271E7AF08000FBD447 /* MYNavController.m */; };
+		F87D764D1E7AF08000FBD447 /* MYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87D76291E7AF08000FBD447 /* MYTabBarController.m */; };
+		F87D764E1E7AF08000FBD447 /* MYMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87D762F1E7AF08000FBD447 /* MYMessageViewController.m */; };
+		F87D764F1E7AF08000FBD447 /* MYMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F87D76301E7AF08000FBD447 /* MYMessageViewController.xib */; };
+		F87D76501E7AF08000FBD447 /* MYMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87D76361E7AF08000FBD447 /* MYMineViewController.m */; };
+		F87D76511E7AF08000FBD447 /* MYMineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F87D76371E7AF08000FBD447 /* MYMineViewController.xib */; };
+		F87D76541E7AF08000FBD447 /* MYSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87D76481E7AF08000FBD447 /* MYSearchViewController.m */; };
+		F87D76551E7AF08000FBD447 /* MYSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F87D76491E7AF08000FBD447 /* MYSearchViewController.xib */; };
+		F8B1F1071E9CD2FA000156DF /* MYNewsDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B1F1061E9CD2FA000156DF /* MYNewsDatabaseManager.m */; };
+		F8B1F1091E9CD441000156DF /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B1F1081E9CD441000156DF /* libsqlite3.0.tbd */; };
+		F8B1F10B1E9E6AB7000156DF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B1F10A1E9E6AB7000156DF /* libsqlite3.tbd */; };
+		F8B1F10F1E9E9C4A000156DF /* MYChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B1F10D1E9E9C4A000156DF /* MYChangePasswordViewController.m */; };
+		F8B1F1101E9E9C4A000156DF /* MYChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8B1F10E1E9E9C4A000156DF /* MYChangePasswordViewController.xib */; };
+		F8EA3FF01E8ABCAF001BD481 /* MYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EA3FEE1E8ABCAF001BD481 /* MYLoginViewController.m */; };
+		F8EA3FF11E8ABCAF001BD481 /* MYLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8EA3FEF1E8ABCAF001BD481 /* MYLoginViewController.xib */; };
+		F8EA3FF31E8AE6F7001BD481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8EA3FF21E8AE6F7001BD481 /* Assets.xcassets */; };
+		F8EA3FF61E8BF281001BD481 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EA3FF51E8BF281001BD481 /* NSString+MD5.m */; };
+		F8EA3FFD1E8BF716001BD481 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EA3FFC1E8BF716001BD481 /* Foundation+Log.m */; };
+		F8EA40011E8C0A1C001BD481 /* MYAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EA40001E8C0A1C001BD481 /* MYAccount.m */; };
+		F8EA40041E8C0C6C001BD481 /* MYAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EA40031E8C0C6C001BD481 /* MYAccountModel.m */; };
+		F8EA40081E8C2235001BD481 /* MYMineHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EA40061E8C2235001BD481 /* MYMineHeadCell.m */; };
+		F8EA40091E8C2235001BD481 /* MYMineHeadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8EA40071E8C2235001BD481 /* MYMineHeadCell.xib */; };
+		F8EA400D1E8EA6F6001BD481 /* MYNewsCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EA400B1E8EA6F6001BD481 /* MYNewsCommentViewController.m */; };
+		F8EA400E1E8EA6F6001BD481 /* MYNewsCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8EA400C1E8EA6F6001BD481 /* MYNewsCommentViewController.xib */; };
+		F8EA40121E8EB115001BD481 /* MYCommentListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EA40101E8EB115001BD481 /* MYCommentListCell.m */; };
+		F8EA40131E8EB115001BD481 /* MYCommentListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8EA40111E8EB115001BD481 /* MYCommentListCell.xib */; };
+		F8EA40161E8EBC1F001BD481 /* MYCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EA40151E8EBC1F001BD481 /* MYCommentModel.m */; };
+		F8EA40191E8FF6D9001BD481 /* MYEditCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EA40181E8FF6D9001BD481 /* MYEditCommentView.m */; };
+		F8EA401F1E969DB9001BD481 /* MYLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EA401E1E969DB9001BD481 /* MYLoadingView.m */; };
+		F8EA40221E969E4F001BD481 /* QKBNSString+DL.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EA40211E969E4F001BD481 /* QKBNSString+DL.m */; };
+		F8EA40261E96A61E001BD481 /* MYRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EA40241E96A61E001BD481 /* MYRegisterViewController.m */; };
+		F8EA40271E96A61E001BD481 /* MYRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8EA40251E96A61E001BD481 /* MYRegisterViewController.xib */; };
+		F8EA402B1E977332001BD481 /* MYSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EA40291E977332001BD481 /* MYSettingTableViewController.m */; };
+		F8EA402C1E977332001BD481 /* MYSettingTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8EA402A1E977332001BD481 /* MYSettingTableViewController.xib */; };
+		F8EA40301E9780BA001BD481 /* MYInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EA402E1E9780BA001BD481 /* MYInfoTableViewController.m */; };
+		F8EA40311E9780BA001BD481 /* MYInfoTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8EA402F1E9780BA001BD481 /* MYInfoTableViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D1CEBCE6E7E4B7732A8FBD9 /* Pods-NewsClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewsClient/Pods-NewsClient.release.xcconfig"; sourceTree = "<group>"; };
+		5729CCB52305DB2AEE3D8D3B /* libPods-NewsClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewsClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90DAF26D6F72FDCC96620AE /* Pods-NewsClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewsClient/Pods-NewsClient.debug.xcconfig"; sourceTree = "<group>"; };
+		F86F70D61E7B0942004B8327 /* MYRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYRequestManager.h; sourceTree = "<group>"; };
+		F86F70D71E7B0942004B8327 /* MYRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYRequestManager.m; sourceTree = "<group>"; };
+		F86F70D91E7D5A66004B8327 /* MYNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNewsModel.h; sourceTree = "<group>"; };
+		F86F70DA1E7D5A66004B8327 /* MYNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNewsModel.m; sourceTree = "<group>"; };
+		F86F70DC1E7D66D5004B8327 /* MYNewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNewsDetailViewController.h; sourceTree = "<group>"; };
+		F86F70DD1E7D66D5004B8327 /* MYNewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNewsDetailViewController.m; sourceTree = "<group>"; };
+		F86F70DE1E7D66D5004B8327 /* MYNewsDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYNewsDetailViewController.xib; sourceTree = "<group>"; };
+		F86F70E11E7D9B01004B8327 /* MYNewsListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNewsListCell.h; sourceTree = "<group>"; };
+		F86F70E21E7D9B01004B8327 /* MYNewsListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNewsListCell.m; sourceTree = "<group>"; };
+		F86F70E31E7D9B01004B8327 /* MYNewsListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYNewsListCell.xib; sourceTree = "<group>"; };
+		F86F70E61E7EFA4C004B8327 /* MYNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNewsViewController.h; sourceTree = "<group>"; };
+		F86F70E71E7EFA4C004B8327 /* MYNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNewsViewController.m; sourceTree = "<group>"; };
+		F86F70E81E7EFA4C004B8327 /* MYNewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYNewsViewController.xib; sourceTree = "<group>"; };
+		F86F70EC1E7FEDB6004B8327 /* Global.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.pch; sourceTree = "<group>"; };
+		F86F70F01E80C81B004B8327 /* MYNewsListHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNewsListHelper.h; sourceTree = "<group>"; };
+		F86F70F11E80C81B004B8327 /* MYNewsListHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNewsListHelper.m; sourceTree = "<group>"; };
+		F87D75D91E7AD44A00FBD447 /* NewsClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F87D75DD1E7AD44A00FBD447 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F87D75DF1E7AD44A00FBD447 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F87D75E01E7AD44A00FBD447 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F87D75EB1E7AD44A00FBD447 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F87D75ED1E7AD44A00FBD447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F87D76261E7AF08000FBD447 /* MYNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNavController.h; sourceTree = "<group>"; };
+		F87D76271E7AF08000FBD447 /* MYNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNavController.m; sourceTree = "<group>"; };
+		F87D76281E7AF08000FBD447 /* MYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTabBarController.h; sourceTree = "<group>"; };
+		F87D76291E7AF08000FBD447 /* MYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTabBarController.m; sourceTree = "<group>"; };
+		F87D762E1E7AF08000FBD447 /* MYMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYMessageViewController.h; sourceTree = "<group>"; };
+		F87D762F1E7AF08000FBD447 /* MYMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYMessageViewController.m; sourceTree = "<group>"; };
+		F87D76301E7AF08000FBD447 /* MYMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYMessageViewController.xib; sourceTree = "<group>"; };
+		F87D76351E7AF08000FBD447 /* MYMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYMineViewController.h; sourceTree = "<group>"; };
+		F87D76361E7AF08000FBD447 /* MYMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYMineViewController.m; sourceTree = "<group>"; };
+		F87D76371E7AF08000FBD447 /* MYMineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYMineViewController.xib; sourceTree = "<group>"; };
+		F87D76471E7AF08000FBD447 /* MYSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSearchViewController.h; sourceTree = "<group>"; };
+		F87D76481E7AF08000FBD447 /* MYSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSearchViewController.m; sourceTree = "<group>"; };
+		F87D76491E7AF08000FBD447 /* MYSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYSearchViewController.xib; sourceTree = "<group>"; };
+		F8B1F1051E9CD2FA000156DF /* MYNewsDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNewsDatabaseManager.h; sourceTree = "<group>"; };
+		F8B1F1061E9CD2FA000156DF /* MYNewsDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNewsDatabaseManager.m; sourceTree = "<group>"; };
+		F8B1F1081E9CD441000156DF /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		F8B1F10A1E9E6AB7000156DF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		F8B1F10C1E9E9C4A000156DF /* MYChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYChangePasswordViewController.h; sourceTree = "<group>"; };
+		F8B1F10D1E9E9C4A000156DF /* MYChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYChangePasswordViewController.m; sourceTree = "<group>"; };
+		F8B1F10E1E9E9C4A000156DF /* MYChangePasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYChangePasswordViewController.xib; sourceTree = "<group>"; };
+		F8EA3FED1E8ABCAF001BD481 /* MYLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLoginViewController.h; sourceTree = "<group>"; };
+		F8EA3FEE1E8ABCAF001BD481 /* MYLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLoginViewController.m; sourceTree = "<group>"; };
+		F8EA3FEF1E8ABCAF001BD481 /* MYLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYLoginViewController.xib; sourceTree = "<group>"; };
+		F8EA3FF21E8AE6F7001BD481 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		F8EA3FF41E8BF281001BD481 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		F8EA3FF51E8BF281001BD481 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		F8EA3FFC1E8BF716001BD481 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		F8EA3FFF1E8C0A1C001BD481 /* MYAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAccount.h; sourceTree = "<group>"; };
+		F8EA40001E8C0A1C001BD481 /* MYAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAccount.m; sourceTree = "<group>"; };
+		F8EA40021E8C0C6C001BD481 /* MYAccountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAccountModel.h; sourceTree = "<group>"; };
+		F8EA40031E8C0C6C001BD481 /* MYAccountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAccountModel.m; sourceTree = "<group>"; };
+		F8EA40051E8C2235001BD481 /* MYMineHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYMineHeadCell.h; sourceTree = "<group>"; };
+		F8EA40061E8C2235001BD481 /* MYMineHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYMineHeadCell.m; sourceTree = "<group>"; };
+		F8EA40071E8C2235001BD481 /* MYMineHeadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYMineHeadCell.xib; sourceTree = "<group>"; };
+		F8EA400A1E8EA6F6001BD481 /* MYNewsCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNewsCommentViewController.h; sourceTree = "<group>"; };
+		F8EA400B1E8EA6F6001BD481 /* MYNewsCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNewsCommentViewController.m; sourceTree = "<group>"; };
+		F8EA400C1E8EA6F6001BD481 /* MYNewsCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYNewsCommentViewController.xib; sourceTree = "<group>"; };
+		F8EA400F1E8EB115001BD481 /* MYCommentListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCommentListCell.h; sourceTree = "<group>"; };
+		F8EA40101E8EB115001BD481 /* MYCommentListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCommentListCell.m; sourceTree = "<group>"; };
+		F8EA40111E8EB115001BD481 /* MYCommentListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYCommentListCell.xib; sourceTree = "<group>"; };
+		F8EA40141E8EBC1F001BD481 /* MYCommentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCommentModel.h; sourceTree = "<group>"; };
+		F8EA40151E8EBC1F001BD481 /* MYCommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCommentModel.m; sourceTree = "<group>"; };
+		F8EA40171E8FF6D9001BD481 /* MYEditCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYEditCommentView.h; sourceTree = "<group>"; };
+		F8EA40181E8FF6D9001BD481 /* MYEditCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYEditCommentView.m; sourceTree = "<group>"; };
+		F8EA401D1E969DB9001BD481 /* MYLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLoadingView.h; sourceTree = "<group>"; };
+		F8EA401E1E969DB9001BD481 /* MYLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLoadingView.m; sourceTree = "<group>"; };
+		F8EA40201E969E4F001BD481 /* QKBNSString+DL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QKBNSString+DL.h"; sourceTree = "<group>"; };
+		F8EA40211E969E4F001BD481 /* QKBNSString+DL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QKBNSString+DL.m"; sourceTree = "<group>"; };
+		F8EA40231E96A61E001BD481 /* MYRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYRegisterViewController.h; sourceTree = "<group>"; };
+		F8EA40241E96A61E001BD481 /* MYRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYRegisterViewController.m; sourceTree = "<group>"; };
+		F8EA40251E96A61E001BD481 /* MYRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYRegisterViewController.xib; sourceTree = "<group>"; };
+		F8EA40281E977332001BD481 /* MYSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSettingTableViewController.h; sourceTree = "<group>"; };
+		F8EA40291E977332001BD481 /* MYSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSettingTableViewController.m; sourceTree = "<group>"; };
+		F8EA402A1E977332001BD481 /* MYSettingTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYSettingTableViewController.xib; sourceTree = "<group>"; };
+		F8EA402D1E9780BA001BD481 /* MYInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYInfoTableViewController.h; sourceTree = "<group>"; };
+		F8EA402E1E9780BA001BD481 /* MYInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYInfoTableViewController.m; sourceTree = "<group>"; };
+		F8EA402F1E9780BA001BD481 /* MYInfoTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYInfoTableViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F87D75D61E7AD44A00FBD447 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8B1F10B1E9E6AB7000156DF /* libsqlite3.tbd in Frameworks */,
+				F8B1F1091E9CD441000156DF /* libsqlite3.0.tbd in Frameworks */,
+				46D5B360CC7975ABE804A089 /* libPods-NewsClient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DEF6B91D211B08969C2AC19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8B1F10A1E9E6AB7000156DF /* libsqlite3.tbd */,
+				F8B1F1081E9CD441000156DF /* libsqlite3.0.tbd */,
+				5729CCB52305DB2AEE3D8D3B /* libPods-NewsClient.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76BA718C9CA8FDB52277CBC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D90DAF26D6F72FDCC96620AE /* Pods-NewsClient.debug.xcconfig */,
+				0D1CEBCE6E7E4B7732A8FBD9 /* Pods-NewsClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F86F70D51E7B08E4004B8327 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F86F70D61E7B0942004B8327 /* MYRequestManager.h */,
+				F86F70D71E7B0942004B8327 /* MYRequestManager.m */,
+				F8EA3FF41E8BF281001BD481 /* NSString+MD5.h */,
+				F8EA3FF51E8BF281001BD481 /* NSString+MD5.m */,
+				F8EA3FFC1E8BF716001BD481 /* Foundation+Log.m */,
+				F8EA40201E969E4F001BD481 /* QKBNSString+DL.h */,
+				F8EA40211E969E4F001BD481 /* QKBNSString+DL.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F86F70EB1E7FDDE8004B8327 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F86F70F01E80C81B004B8327 /* MYNewsListHelper.h */,
+				F86F70F11E80C81B004B8327 /* MYNewsListHelper.m */,
+				F8B1F1051E9CD2FA000156DF /* MYNewsDatabaseManager.h */,
+				F8B1F1061E9CD2FA000156DF /* MYNewsDatabaseManager.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F87D75D01E7AD44A00FBD447 = {
+			isa = PBXGroup;
+			children = (
+				F87D75DB1E7AD44A00FBD447 /* NewsClient */,
+				F87D75DA1E7AD44A00FBD447 /* Products */,
+				76BA718C9CA8FDB52277CBC7 /* Pods */,
+				0DEF6B91D211B08969C2AC19 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F87D75DA1E7AD44A00FBD447 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F87D75D91E7AD44A00FBD447 /* NewsClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F87D75DB1E7AD44A00FBD447 /* NewsClient */ = {
+			isa = PBXGroup;
+			children = (
+				F8EA3FFE1E8C0A07001BD481 /* Account */,
+				F87D76241E7AF08000FBD447 /* Main */,
+				F87D762C1E7AF08000FBD447 /* Message */,
+				F87D76331E7AF08000FBD447 /* Mine */,
+				F87D763A1E7AF08000FBD447 /* News */,
+				F87D76411E7AF08000FBD447 /* Other */,
+				F86F70D51E7B08E4004B8327 /* Tools */,
+				F87D76451E7AF08000FBD447 /* Search */,
+				F8EA3FF21E8AE6F7001BD481 /* Assets.xcassets */,
+				F87D75DC1E7AD44A00FBD447 /* Supporting Files */,
+			);
+			path = NewsClient;
+			sourceTree = "<group>";
+		};
+		F87D75DC1E7AD44A00FBD447 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F87D75DD1E7AD44A00FBD447 /* main.m */,
+				F87D75DF1E7AD44A00FBD447 /* AppDelegate.h */,
+				F87D75E01E7AD44A00FBD447 /* AppDelegate.m */,
+				F87D75EA1E7AD44A00FBD447 /* LaunchScreen.storyboard */,
+				F87D75ED1E7AD44A00FBD447 /* Info.plist */,
+				F86F70EC1E7FEDB6004B8327 /* Global.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F87D76241E7AF08000FBD447 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F87D76251E7AF08000FBD447 /* Controller */,
+				F87D762A1E7AF08000FBD447 /* Model */,
+				F87D762B1E7AF08000FBD447 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F87D76251E7AF08000FBD447 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F87D76261E7AF08000FBD447 /* MYNavController.h */,
+				F87D76271E7AF08000FBD447 /* MYNavController.m */,
+				F87D76281E7AF08000FBD447 /* MYTabBarController.h */,
+				F87D76291E7AF08000FBD447 /* MYTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F87D762A1E7AF08000FBD447 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F87D762B1E7AF08000FBD447 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8EA401D1E969DB9001BD481 /* MYLoadingView.h */,
+				F8EA401E1E969DB9001BD481 /* MYLoadingView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F87D762C1E7AF08000FBD447 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				F87D762D1E7AF08000FBD447 /* Controller */,
+				F87D76311E7AF08000FBD447 /* Model */,
+				F87D76321E7AF08000FBD447 /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		F87D762D1E7AF08000FBD447 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F87D762E1E7AF08000FBD447 /* MYMessageViewController.h */,
+				F87D762F1E7AF08000FBD447 /* MYMessageViewController.m */,
+				F87D76301E7AF08000FBD447 /* MYMessageViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F87D76311E7AF08000FBD447 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F87D76321E7AF08000FBD447 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F87D76331E7AF08000FBD447 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				F87D76341E7AF08000FBD447 /* Controller */,
+				F87D76381E7AF08000FBD447 /* Model */,
+				F87D76391E7AF08000FBD447 /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		F87D76341E7AF08000FBD447 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F87D76351E7AF08000FBD447 /* MYMineViewController.h */,
+				F87D76361E7AF08000FBD447 /* MYMineViewController.m */,
+				F87D76371E7AF08000FBD447 /* MYMineViewController.xib */,
+				F8EA3FED1E8ABCAF001BD481 /* MYLoginViewController.h */,
+				F8EA3FEE1E8ABCAF001BD481 /* MYLoginViewController.m */,
+				F8EA3FEF1E8ABCAF001BD481 /* MYLoginViewController.xib */,
+				F8EA40231E96A61E001BD481 /* MYRegisterViewController.h */,
+				F8EA40241E96A61E001BD481 /* MYRegisterViewController.m */,
+				F8EA40251E96A61E001BD481 /* MYRegisterViewController.xib */,
+				F8EA40281E977332001BD481 /* MYSettingTableViewController.h */,
+				F8EA40291E977332001BD481 /* MYSettingTableViewController.m */,
+				F8EA402A1E977332001BD481 /* MYSettingTableViewController.xib */,
+				F8EA402D1E9780BA001BD481 /* MYInfoTableViewController.h */,
+				F8EA402E1E9780BA001BD481 /* MYInfoTableViewController.m */,
+				F8EA402F1E9780BA001BD481 /* MYInfoTableViewController.xib */,
+				F8B1F10C1E9E9C4A000156DF /* MYChangePasswordViewController.h */,
+				F8B1F10D1E9E9C4A000156DF /* MYChangePasswordViewController.m */,
+				F8B1F10E1E9E9C4A000156DF /* MYChangePasswordViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F87D76381E7AF08000FBD447 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F87D76391E7AF08000FBD447 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8EA40051E8C2235001BD481 /* MYMineHeadCell.h */,
+				F8EA40061E8C2235001BD481 /* MYMineHeadCell.m */,
+				F8EA40071E8C2235001BD481 /* MYMineHeadCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F87D763A1E7AF08000FBD447 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				F86F70EB1E7FDDE8004B8327 /* Tools */,
+				F87D763B1E7AF08000FBD447 /* Controller */,
+				F87D763F1E7AF08000FBD447 /* Model */,
+				F87D76401E7AF08000FBD447 /* View */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		F87D763B1E7AF08000FBD447 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F86F70E61E7EFA4C004B8327 /* MYNewsViewController.h */,
+				F86F70E71E7EFA4C004B8327 /* MYNewsViewController.m */,
+				F86F70E81E7EFA4C004B8327 /* MYNewsViewController.xib */,
+				F86F70DC1E7D66D5004B8327 /* MYNewsDetailViewController.h */,
+				F86F70DD1E7D66D5004B8327 /* MYNewsDetailViewController.m */,
+				F86F70DE1E7D66D5004B8327 /* MYNewsDetailViewController.xib */,
+				F8EA400A1E8EA6F6001BD481 /* MYNewsCommentViewController.h */,
+				F8EA400B1E8EA6F6001BD481 /* MYNewsCommentViewController.m */,
+				F8EA400C1E8EA6F6001BD481 /* MYNewsCommentViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F87D763F1E7AF08000FBD447 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F86F70D91E7D5A66004B8327 /* MYNewsModel.h */,
+				F86F70DA1E7D5A66004B8327 /* MYNewsModel.m */,
+				F8EA40141E8EBC1F001BD481 /* MYCommentModel.h */,
+				F8EA40151E8EBC1F001BD481 /* MYCommentModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F87D76401E7AF08000FBD447 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F86F70E11E7D9B01004B8327 /* MYNewsListCell.h */,
+				F86F70E21E7D9B01004B8327 /* MYNewsListCell.m */,
+				F86F70E31E7D9B01004B8327 /* MYNewsListCell.xib */,
+				F8EA400F1E8EB115001BD481 /* MYCommentListCell.h */,
+				F8EA40101E8EB115001BD481 /* MYCommentListCell.m */,
+				F8EA40111E8EB115001BD481 /* MYCommentListCell.xib */,
+				F8EA40171E8FF6D9001BD481 /* MYEditCommentView.h */,
+				F8EA40181E8FF6D9001BD481 /* MYEditCommentView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F87D76411E7AF08000FBD447 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F87D76421E7AF08000FBD447 /* Controller */,
+				F87D76431E7AF08000FBD447 /* Model */,
+				F87D76441E7AF08000FBD447 /* View */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F87D76421E7AF08000FBD447 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F87D76431E7AF08000FBD447 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F87D76441E7AF08000FBD447 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F87D76451E7AF08000FBD447 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				F87D76461E7AF08000FBD447 /* Controller */,
+				F87D764A1E7AF08000FBD447 /* Model */,
+				F87D764B1E7AF08000FBD447 /* View */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		F87D76461E7AF08000FBD447 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F87D76471E7AF08000FBD447 /* MYSearchViewController.h */,
+				F87D76481E7AF08000FBD447 /* MYSearchViewController.m */,
+				F87D76491E7AF08000FBD447 /* MYSearchViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F87D764A1E7AF08000FBD447 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F87D764B1E7AF08000FBD447 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8EA3FFE1E8C0A07001BD481 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				F8EA3FFF1E8C0A1C001BD481 /* MYAccount.h */,
+				F8EA40001E8C0A1C001BD481 /* MYAccount.m */,
+				F8EA40021E8C0C6C001BD481 /* MYAccountModel.h */,
+				F8EA40031E8C0C6C001BD481 /* MYAccountModel.m */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F87D75D81E7AD44A00FBD447 /* NewsClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F87D75F01E7AD44A00FBD447 /* Build configuration list for PBXNativeTarget "NewsClient" */;
+			buildPhases = (
+				FCD6A7D30E754A43D0683F1A /* [CP] Check Pods Manifest.lock */,
+				F87D75D51E7AD44A00FBD447 /* Sources */,
+				F87D75D61E7AD44A00FBD447 /* Frameworks */,
+				F87D75D71E7AD44A00FBD447 /* Resources */,
+				6777001EB062DDF5ECAC5F70 /* [CP] Embed Pods Frameworks */,
+				33C8F1058034D6B060998323 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewsClient;
+			productName = NewsClient;
+			productReference = F87D75D91E7AD44A00FBD447 /* NewsClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F87D75D11E7AD44A00FBD447 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = MingYan;
+				TargetAttributes = {
+					F87D75D81E7AD44A00FBD447 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = X7RJCKFM8X;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F87D75D41E7AD44A00FBD447 /* Build configuration list for PBXProject "NewsClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F87D75D01E7AD44A00FBD447;
+			productRefGroup = F87D75DA1E7AD44A00FBD447 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F87D75D81E7AD44A00FBD447 /* NewsClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F87D75D71E7AD44A00FBD447 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8EA40091E8C2235001BD481 /* MYMineHeadCell.xib in Resources */,
+				F8EA400E1E8EA6F6001BD481 /* MYNewsCommentViewController.xib in Resources */,
+				F8EA40271E96A61E001BD481 /* MYRegisterViewController.xib in Resources */,
+				F86F70E01E7D66D5004B8327 /* MYNewsDetailViewController.xib in Resources */,
+				F8EA3FF11E8ABCAF001BD481 /* MYLoginViewController.xib in Resources */,
+				F8B1F1101E9E9C4A000156DF /* MYChangePasswordViewController.xib in Resources */,
+				F86F70E51E7D9B01004B8327 /* MYNewsListCell.xib in Resources */,
+				F8EA402C1E977332001BD481 /* MYSettingTableViewController.xib in Resources */,
+				F87D75EC1E7AD44A00FBD447 /* LaunchScreen.storyboard in Resources */,
+				F86F70EA1E7EFA4C004B8327 /* MYNewsViewController.xib in Resources */,
+				F87D764F1E7AF08000FBD447 /* MYMessageViewController.xib in Resources */,
+				F87D76551E7AF08000FBD447 /* MYSearchViewController.xib in Resources */,
+				F8EA40311E9780BA001BD481 /* MYInfoTableViewController.xib in Resources */,
+				F8EA3FF31E8AE6F7001BD481 /* Assets.xcassets in Resources */,
+				F87D76511E7AF08000FBD447 /* MYMineViewController.xib in Resources */,
+				F8EA40131E8EB115001BD481 /* MYCommentListCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33C8F1058034D6B060998323 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewsClient/Pods-NewsClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6777001EB062DDF5ECAC5F70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewsClient/Pods-NewsClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCD6A7D30E754A43D0683F1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F87D75D51E7AD44A00FBD447 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8EA402B1E977332001BD481 /* MYSettingTableViewController.m in Sources */,
+				F86F70D81E7B0942004B8327 /* MYRequestManager.m in Sources */,
+				F8EA401F1E969DB9001BD481 /* MYLoadingView.m in Sources */,
+				F8EA40301E9780BA001BD481 /* MYInfoTableViewController.m in Sources */,
+				F8EA40081E8C2235001BD481 /* MYMineHeadCell.m in Sources */,
+				F87D764C1E7AF08000FBD447 /* MYNavController.m in Sources */,
+				F8EA40121E8EB115001BD481 /* MYCommentListCell.m in Sources */,
+				F8EA3FF01E8ABCAF001BD481 /* MYLoginViewController.m in Sources */,
+				F8EA40161E8EBC1F001BD481 /* MYCommentModel.m in Sources */,
+				F87D76501E7AF08000FBD447 /* MYMineViewController.m in Sources */,
+				F87D764D1E7AF08000FBD447 /* MYTabBarController.m in Sources */,
+				F86F70DB1E7D5A66004B8327 /* MYNewsModel.m in Sources */,
+				F87D75E11E7AD44A00FBD447 /* AppDelegate.m in Sources */,
+				F87D75DE1E7AD44A00FBD447 /* main.m in Sources */,
+				F8B1F1071E9CD2FA000156DF /* MYNewsDatabaseManager.m in Sources */,
+				F86F70F21E80C81B004B8327 /* MYNewsListHelper.m in Sources */,
+				F8EA40011E8C0A1C001BD481 /* MYAccount.m in Sources */,
+				F87D76541E7AF08000FBD447 /* MYSearchViewController.m in Sources */,
+				F86F70E91E7EFA4C004B8327 /* MYNewsViewController.m in Sources */,
+				F8EA400D1E8EA6F6001BD481 /* MYNewsCommentViewController.m in Sources */,
+				F87D764E1E7AF08000FBD447 /* MYMessageViewController.m in Sources */,
+				F8EA40041E8C0C6C001BD481 /* MYAccountModel.m in Sources */,
+				F8B1F10F1E9E9C4A000156DF /* MYChangePasswordViewController.m in Sources */,
+				F8EA3FF61E8BF281001BD481 /* NSString+MD5.m in Sources */,
+				F8EA40191E8FF6D9001BD481 /* MYEditCommentView.m in Sources */,
+				F8EA40261E96A61E001BD481 /* MYRegisterViewController.m in Sources */,
+				F86F70E41E7D9B01004B8327 /* MYNewsListCell.m in Sources */,
+				F86F70DF1E7D66D5004B8327 /* MYNewsDetailViewController.m in Sources */,
+				F8EA40221E969E4F001BD481 /* QKBNSString+DL.m in Sources */,
+				F8EA3FFD1E8BF716001BD481 /* Foundation+Log.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F87D75EA1E7AD44A00FBD447 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F87D75EB1E7AD44A00FBD447 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F87D75EE1E7AD44A00FBD447 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F87D75EF1E7AD44A00FBD447 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F87D75F11E7AD44A00FBD447 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D90DAF26D6F72FDCC96620AE /* Pods-NewsClient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X7RJCKFM8X;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NewsClient/Global.pch";
+				INFOPLIST_FILE = NewsClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Ming.NewsClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F87D75F21E7AD44A00FBD447 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D1CEBCE6E7E4B7732A8FBD9 /* Pods-NewsClient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X7RJCKFM8X;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NewsClient/Global.pch";
+				INFOPLIST_FILE = NewsClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Ming.NewsClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F87D75D41E7AD44A00FBD447 /* Build configuration list for PBXProject "NewsClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F87D75EE1E7AD44A00FBD447 /* Debug */,
+				F87D75EF1E7AD44A00FBD447 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F87D75F01E7AD44A00FBD447 /* Build configuration list for PBXNativeTarget "NewsClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F87D75F11E7AD44A00FBD447 /* Debug */,
+				F87D75F21E7AD44A00FBD447 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F87D75D11E7AD44A00FBD447 /* Project object */;
+}

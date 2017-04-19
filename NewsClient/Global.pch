@@ -1,0 +1,35 @@
+//
+//  Global.pch
+//  NewsClient
+//
+//  Created by MingYanWoo on 2017/3/20.
+//  Copyright © 2017年 MingYan. All rights reserved.
+//
+
+#ifndef Global_pch
+#define Global_pch
+
+//0为测试，1为正式
+#define MY_Request_Mode 1
+#define MY_Request_Url (MY_Request_Mode == 0 ? @"http://192.168.199.161:8888/api/" : @"http://119.29.175.89/api/")
+
+#define MYScreenWidth [UIScreen mainScreen].bounds.size.width
+#define MYScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define MYViewWidth self.view.bounds.size.width
+#define MYViewHeight self.view.bounds.size.height
+
+#define MYMainColor [UIColor colorWithRed:214.0/255.0 green:33.0/255.0 blue:25.0/255.0 alpha:1.0]
+
+#define MYButtonCorner 8.0
+
+#define MYTextHintTime 2.0
+#define MYLoadingViewHint @"正在加载..."
+
+#define MYKeyWindow [UIApplication sharedApplication].keyWindow
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Global_pch */

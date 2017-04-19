@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" focusStyle="custom" rowHeight="69" id="KGk-i7-Jjw" customClass="MYNewsListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Iv-Qe-zVj">
+                        <rect key="frame" x="10" y="10" width="99.5" height="74.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="9Iv-Qe-zVj" secondAttribute="height" multiplier="4:3" id="0vr-fk-7eh"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="放到你是客服呢的所发生的d发房产税的股份的快感v" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riu-QE-tZ4">
+                        <rect key="frame" x="119.5" y="10" width="182.5" height="54"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ybv-jc-Gfo">
+                        <rect key="frame" x="119" y="69" width="99" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fiq-Sd-USj">
+                        <rect key="frame" x="0.0" y="94" width="320" height="0.5"/>
+                        <color key="backgroundColor" red="0.90172906090000005" green="0.90172906090000005" blue="0.90172906090000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="v7p-pz-7hs"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-03-28" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAM-ET-SaQ">
+                        <rect key="frame" x="228" y="69" width="74" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="74" id="a8k-Ca-Vk4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9Iv-Qe-zVj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="5UX-Ye-eXj"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="nAM-ET-SaQ" secondAttribute="trailing" constant="10" id="65Y-1Y-Wzh"/>
+                    <constraint firstAttribute="bottom" secondItem="9Iv-Qe-zVj" secondAttribute="bottom" constant="10" id="N3b-2M-6nx"/>
+                    <constraint firstItem="Ybv-jc-Gfo" firstAttribute="bottom" secondItem="9Iv-Qe-zVj" secondAttribute="bottom" id="Q1k-eo-Igb"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="riu-QE-tZ4" secondAttribute="trailing" constant="10" id="Q4Z-HZ-MbZ"/>
+                    <constraint firstItem="riu-QE-tZ4" firstAttribute="leading" secondItem="9Iv-Qe-zVj" secondAttribute="trailing" constant="10" id="QMI-uJ-lVn"/>
+                    <constraint firstAttribute="bottom" secondItem="Fiq-Sd-USj" secondAttribute="bottom" id="T6w-0r-38l"/>
+                    <constraint firstItem="nAM-ET-SaQ" firstAttribute="centerY" secondItem="Ybv-jc-Gfo" secondAttribute="centerY" id="T8S-dh-s2f"/>
+                    <constraint firstItem="9Iv-Qe-zVj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="cC4-YM-EKF"/>
+                    <constraint firstItem="riu-QE-tZ4" firstAttribute="top" secondItem="9Iv-Qe-zVj" secondAttribute="top" id="cLb-cO-D8T"/>
+                    <constraint firstItem="Fiq-Sd-USj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dYH-o6-vxp"/>
+                    <constraint firstItem="nAM-ET-SaQ" firstAttribute="leading" secondItem="Ybv-jc-Gfo" secondAttribute="trailing" constant="10" id="fDg-gx-fct"/>
+                    <constraint firstItem="Ybv-jc-Gfo" firstAttribute="leading" secondItem="9Iv-Qe-zVj" secondAttribute="trailing" constant="10" id="ilW-3J-Rtb"/>
+                    <constraint firstAttribute="trailing" secondItem="Fiq-Sd-USj" secondAttribute="trailing" id="tDl-WK-FnK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="newsImageView" destination="9Iv-Qe-zVj" id="DDq-bh-m9c"/>
+                <outlet property="newsSrc" destination="Ybv-jc-Gfo" id="EgH-g4-ZGm"/>
+                <outlet property="newsTime" destination="nAM-ET-SaQ" id="NGn-AG-aaQ"/>
+                <outlet property="newsTitle" destination="riu-QE-tZ4" id="cvm-sx-rlW"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="104.5"/>
+        </tableViewCell>
+    </objects>
+</document>

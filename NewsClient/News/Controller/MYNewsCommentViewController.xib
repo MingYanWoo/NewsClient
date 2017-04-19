@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MYNewsCommentViewController">
+            <connections>
+                <outlet property="commentField" destination="y9N-Fz-kt8" id="TgS-JO-Tfs"/>
+                <outlet property="tableView" destination="z23-ff-Fs4" id="OKs-Lh-bGr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yUH-vT-xcI">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cp1-wf-JMf">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="RTP-nH-UKN"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="写评论..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y9N-Fz-kt8">
+                            <rect key="frame" x="10" y="6" width="355" height="33"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="y9N-Fz-kt8" firstAttribute="top" secondItem="Cp1-wf-JMf" secondAttribute="bottom" constant="5" id="2cW-9h-70A"/>
+                        <constraint firstItem="Cp1-wf-JMf" firstAttribute="top" secondItem="yUH-vT-xcI" secondAttribute="top" id="GIF-v4-luc"/>
+                        <constraint firstAttribute="height" constant="44" id="Vyd-Lf-Ipx"/>
+                        <constraint firstAttribute="trailing" secondItem="y9N-Fz-kt8" secondAttribute="trailing" constant="10" id="Zs1-5e-d5n"/>
+                        <constraint firstItem="y9N-Fz-kt8" firstAttribute="leading" secondItem="yUH-vT-xcI" secondAttribute="leading" constant="10" id="cD1-Fb-Wv5"/>
+                        <constraint firstItem="Cp1-wf-JMf" firstAttribute="leading" secondItem="yUH-vT-xcI" secondAttribute="leading" id="mHQ-cA-SqJ"/>
+                        <constraint firstAttribute="bottom" secondItem="y9N-Fz-kt8" secondAttribute="bottom" constant="5" id="s2T-0i-cKN"/>
+                        <constraint firstAttribute="trailing" secondItem="Cp1-wf-JMf" secondAttribute="trailing" id="zKY-9B-GnK"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="z23-ff-Fs4">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="8NZ-lA-AIJ"/>
+                        <outlet property="delegate" destination="-1" id="QHQ-qx-aQm"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="yUH-vT-xcI" secondAttribute="bottom" id="1QI-PM-81V"/>
+                <constraint firstAttribute="trailing" secondItem="yUH-vT-xcI" secondAttribute="trailing" id="3Jg-R1-zN1"/>
+                <constraint firstItem="yUH-vT-xcI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7mE-Z8-bBm"/>
+                <constraint firstItem="yUH-vT-xcI" firstAttribute="top" secondItem="z23-ff-Fs4" secondAttribute="bottom" id="Ett-4R-cLT"/>
+                <constraint firstItem="z23-ff-Fs4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RXf-jF-sjq"/>
+                <constraint firstAttribute="trailing" secondItem="z23-ff-Fs4" secondAttribute="trailing" id="pUv-y4-LZl"/>
+                <constraint firstItem="z23-ff-Fs4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wxe-M9-2f7"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+</document>
